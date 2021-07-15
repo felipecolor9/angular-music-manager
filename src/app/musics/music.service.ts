@@ -5,6 +5,9 @@ import { Music } from "./music"
     providedIn: 'root'
 })
 export class MusicService {
+
+    getAll(): Music[] { return MOCK_MUSICS }
+    
 }   
 
     var MOCK_MUSICS: Music[] =
