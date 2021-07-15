@@ -18,7 +18,10 @@
             <td>{{music.name}}</td>
             <td>{{music.artist}}</td>
             <td>{{music.durationMS}}</td>
-            <td>{{music.rating}}</td>
+            <td>
+                {{music.rating}}
+                <app-star [rating]="music.rating"></app-star>
+            </td>
             <td>{{music.releaseDate}}</td>
             <td></td>
         </tr>
