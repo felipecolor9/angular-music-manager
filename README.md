@@ -1,6 +1,6 @@
 # MusicManager
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
+A simple Angular project for educational purposes, generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.18.
 
 ## Development server
 
