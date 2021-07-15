@@ -17,7 +17,7 @@ export class MusicListComponent implements OnInit {
                 coverUrl:'',
                 artist: 'Teyana Taylor',
                 durationMS: 34200,
-                rating: 9.1,
+                rating: 3.9,
                 releaseDate: '29/08/1998'
             } , {
                 id: 2,
@@ -25,7 +25,7 @@ export class MusicListComponent implements OnInit {
                 coverUrl:'',
                 artist: 'NAS',
                 durationMS: 45400,
-                rating: 9.8,
+                rating: 4.8,
                 releaseDate: '20/05/1994'
             }
         ]
