@@ -8,29 +8,29 @@
         </div>
     </div>
     <br>
-    <table class="table table-stripped"> <!--Bootstrap table-->
+    <table class="table table--stripped"> <!--Bootstrap table-->
         <thead>
             <th>Image</th>
             <th>ID</th>
             <th>Name</th>
             <th>Artist</th>
             <th>Duration</th>
-            <th>Rating</th>
             <th>Release Date</th>
+            <th>Rating</th>
             <th>Options</th>
         </thead>
         <tbody>
             <tr *ngFor="let music of filteredMusics"> <!--Angular Iterate-->
-            <td>{{music.coverUrl}}</td>
+            <td><img src={{music.coverUrl}}/></td>
             <td>{{music.id}}</td>
             <td>{{music.name}}</td>
             <td>{{music.artist}}</td>
             <td>{{music.durationMS}}</td>
+            <td>{{music.releaseDate}}</td>
             <td>
                 {{music.rating}}
                 <app-star [rating]="music.rating"></app-star>
             </td>
-            <td>{{music.releaseDate}}</td>
             <td></td>
         </tr>
         </tbody>
