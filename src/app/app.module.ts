@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { MusicListComponent } from './musics/music-list.component';
 import { ReplacePipe } from './pipe/replace.pipe';
 import { NavigationBar } from './nav_bar/nav_bar.compoment';
+import { MusicInfoComponent } from './musics/music-info.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NavigationBar } from './nav_bar/nav_bar.compoment';
     StarComponent,
     ReplacePipe,
     NavigationBar,
-    Error404Component
+    Error404Component,
+    MusicInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,9 @@ import { NavigationBar } from './nav_bar/nav_bar.compoment';
     RouterModule.forRoot([
       {
         path:'', redirectTo:'musics', pathMatch: 'full'
+      },
+      {
+        path:'musics/info/:id', component: MusicInfoComponent
       },
       {
         path:'musics', component: MusicListComponent  
