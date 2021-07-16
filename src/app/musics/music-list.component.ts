@@ -3,7 +3,6 @@ import { Music } from "./music";
 import { MusicService } from "./music.service";
 
 @Component({
-    selector: 'app-music-list',
     templateUrl: './music-list.component.html'
 })
 export class MusicListComponent implements OnInit {
