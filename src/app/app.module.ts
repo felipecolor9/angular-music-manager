@@ -5,12 +5,14 @@ import { StarComponent } from './star/star.component';
 
 import { AppComponent } from './app.component';
 import { MusicListComponent } from './musics/music-list.component';
+import { ReplacePipe } from './pipe/replace.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MusicListComponent,
-    StarComponent
+    StarComponent,
+    ReplacePipe
   ],
   imports: [
     BrowserModule,
