@@ -7,7 +7,7 @@ import { Music } from "./music"
 export class MusicService {
 
     getAll(): Music[] { return MOCK_MUSICS }
-    
+    retrieveByID(id:number): Music { return MOCK_MUSICS.find((musicIterator: Music) => musicIterator.id === id); }
 }   
 
     var MOCK_MUSICS: Music[] =
