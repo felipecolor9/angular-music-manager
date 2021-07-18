@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { StarComponent } from './star/star.component';
 import { RouterModule } from '@angular/router';
 import { Error404Component } from './error-404/error-404.component';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { MusicListComponent } from './musics/music-list.component';
@@ -24,6 +25,7 @@ import { MusicInfoComponent } from './musics/music-info.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {
         path:'', redirectTo:'musics', pathMatch: 'full'
