@@ -29,7 +29,8 @@
             <td>{{music.releaseDate}}</td>
             <td>{{music.rating}}<app-star [rating]="music.rating"></app-star></td>
             <td>
-                <a [routerLink]="['/musics/info', music.id]" class="btn btn-primary">Edit</a>
+                <a [routerLink]="['/musics/info', music.id]" class="btn btn-primary mr-2" style="margin: 5px;">Edit</a>
+                <button (click)='deleteById(music.id)' class="btn btn-danger">Delete</button>
             </td>
         </tr>
         </tbody>
