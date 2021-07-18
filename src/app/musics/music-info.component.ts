@@ -13,7 +13,16 @@ export class MusicInfoComponent implements OnInit {
     constructor(private activatedRoute: ActivatedRoute, private musicService: MusicService) { } // Active Route
 
     ngOnInit(): void {
-       this.music = this.musicService.retrieveByID(+this.activatedRoute.snapshot.paramMap.get('id'));
+       this.musicService.retrieveByID(+this.activatedRoute.snapshot.paramMap.get('id')).subscribe({
+        next: music => this.music = music,
+        error: err => console.log('Error', err)
+       });
     }
 
+    save(): void {
+        this.musicService.save(this.music).subscribe({
+            next: music => console.log('Saved with Success!', music),
+            error: err => console.log('Error', err)
+        });
+    }
 }
