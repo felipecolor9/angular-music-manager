@@ -2,7 +2,7 @@
 
 <hr/>
 
-<form #musicForm="ngForm">
+<form #musicForm="ngForm" *ngIf="music">
 
     <div class="form-group now">
         <label class="col-sm-2 col-from-label">Name:</label>
@@ -30,5 +30,8 @@
             <div class="invalid-feedback"> <span>Rating is required</span></div>
         </div>
     </div>
+    <br>
+    <button [routerLink]="['/musics']" [disabled]="musicForm.invalid" (click)="save()" class="btn btn-primary mt-2" style="margin-right: 5px;">Save</button>
+    <button [routerLink]="['/musics']" class="btn btn-secondary mt-2">Back</button>
 
 </form>
