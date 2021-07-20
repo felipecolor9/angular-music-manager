@@ -6,19 +6,19 @@ import { Error404Component } from './error-404/error-404.component';
 import { HttpClientModule } from '@angular/common/http'
 
 import { AppComponent } from './app.component';
-import { NavigationBar } from './nav_bar/nav_bar.compoment';
 
 import { MusicModule } from './musics/music.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationBar,
-    Error404Component,
+    Error404Component
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    CoreModule,
     HttpClientModule,
     MusicModule,
     RouterModule.forRoot([
