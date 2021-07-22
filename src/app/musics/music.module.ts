@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import { MusicInfoComponent } from "./music-info.component";
-import { MusicListComponent } from "./music-list.component";
+import { MusicInfoComponent } from "./info/music-info.component";
+import { MusicListComponent } from "./list/music-list.component";
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { StarModule } from "../shared/component/star/star.module";

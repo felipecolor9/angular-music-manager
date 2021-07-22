@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { Music } from "./music";
-import { MusicService } from "./music.service";
+import { Music } from "../music";
+import { MusicService } from "../music.service";
 
 @Component ({
     templateUrl: './music-info.component.html'
@@ -23,6 +23,7 @@ export class MusicInfoComponent implements OnInit {
         this.musicService.save(this.music).subscribe({
             next: music => console.log('Saved with Success!', music),
             error: err => console.log('Error', err)
+            
         });
     }
 }
